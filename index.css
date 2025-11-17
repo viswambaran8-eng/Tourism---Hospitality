@@ -10,6 +10,7 @@ body {
   font-family: "Poppins", sans-serif;
   width: 100vw;
   background-color: beige;
+  overflow-x: hidden;
 }
 
 header {
@@ -19,6 +20,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  background-color: beige;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   position: sticky;
   top: 0;
@@ -220,6 +222,7 @@ header nav ul li a:hover::after {
   width: 100%;
   background-color: darkred;
   white-space: nowrap;
+  overflow-x: hidden;
 }
 
 .animation p {
@@ -578,6 +581,7 @@ header nav ul li a:hover::after {
 .Table6 {
   padding: 0px 5%;
   width: 100%;
+  overflow-x: hidden;
 }
 
 /* .Table6 h2 {
@@ -590,7 +594,7 @@ header nav ul li a:hover::after {
 
 .swiper {
   width: 100%;
-  margin: 20px ;
+  margin: 20px;
 }
 
 .swiper-slide {
@@ -644,10 +648,10 @@ header nav ul li a:hover::after {
   justify-content: center;
   align-items: center;
   inset: 0;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-weight: 600;
   font-size: x-large;
-  color:silver;
+  color: silver;
 }
 
 .swiper-content:hover h3 {
@@ -674,13 +678,15 @@ header nav ul li a:hover::after {
 .cta-button {
   padding: 15px 10px;
   border-radius: 12px;
-  color:white;
+  color: white;
   background-color: darkred;
   font-weight: 600;
+  text-transform: capitalize;
 }
 
 .Table7 {
   padding: 0px 5%;
+  overflow-x: hidden;
 }
 
 .Table7 .swiper .swiper-slide {
@@ -695,4 +701,83 @@ header nav ul li a:hover::after {
 .review {
   width: 100%;
   height: 100%;
+}
+
+.Table8 {
+  padding: 10px 5%;
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  overflow-x: hidden;
+}
+
+.Table8 .container1 {
+  width: 33%;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.Table8 .container2 {
+  width: 34%;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.Table8 .container3 {
+  width: 33%;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.Table8 .the-image img {
+  width: 100%;
+  object-fit: cover;
+  height: 40vh;
+  border-radius: 12px;
+}
+
+.contents p {
+  font-size: x-large;
+  color: #5a0b0b;
+  text-align: center;
+  font-weight: 600;
+  font-family: "Times New Roman", Times, serif;
+}
+
+@media screen and (max-width:1100px) {
+  .Table8 {
+    flex-wrap: wrap;
+  }
+  .Table8 .container1 {
+    width: 100%;
+  }
+  .Table8 .container2 {
+    width: 100%;
+  }
+  .Table8 .container3 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:550px) {
+  .Header h2 {
+    font-size: larger;
+  }
+  .Table5 h2 {
+    font-size: larger;
+    text-align: center;
+  }
+  .Table5 p {
+    font-size: medium;
+    text-align: justify;
+  }
+  .cta-button {
+    padding: 10px 12px;
+  }
 }

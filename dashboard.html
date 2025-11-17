@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tourism And Hospitality</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./dashboard.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./Assests/logo.webp" alt="" />
+      </div>
+      <nav>
+        <ul class="nav_links">
+          <li class="page">
+            <a href="./index.html">Home</a>
+            <i id="page" class="fa-solid fa-caret-down"></i>
+            <a class="drop_menu" href="#">Home 2</a>
+          </li>
+          <li><a href="./about.html">About Us</a></li>
+          <!-- <li><a href="#">Packages</a></li> -->
+          <li><a href="#">Group Tours</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="./dashboard.html">Dashboard</a></li>
+        </ul>
+      </nav>
+      <div class="icons">
+        <i class="fa-regular fa-circle-user"><a href="#"></a></i>
+        <div class="hamburger">
+          <div class="lines"></div>
+          <div class="lines"></div>
+          <div class="lines"></div>
+        </div>
+      </div>
+    </header>
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+      <div class="close-btn">&times;</div>
+      <ul>
+        <li>
+          <div class="flexdiv">
+            <a href="./index.html">Home </a>
+            <span class="dropdownArrow">&#9662;</span>
+          </div>
+          <ul class="submenu">
+            <li><a href="index.html">Home 2</a></li>
+          </ul>
+        </li>
+        <li><a href="./about.html">About Us</a></li>
+        <!-- <li><a href="./packages.html">Packages</a></li> -->
+        <li><a href="./grouptour.html">Group Tour</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="./contact.html">Contact Us</a></li>
+        <li><a href="./dashboard.html">Dashboard</a></li>
+        <li><a href="./signin.html">Sign In</a></li>
+      </ul>
+    </div>
+      <div class="controls">
+        <span class="pill" style="color: navy;">Period: <strong style="color: navy;">Last 30 days</strong></span>
+      </div>
+    </header>
+
+    <section class="grid">
+      <div class="card col-4">
+        <div class="kpi">
+          <div>
+            <div class="meta">Total Visitors (Monthly)</div>
+            <div class="value" id="visitorsTotal"></div>
+          </div>
+          <div style="text-align:right">
+            <div class="meta">Avg Stay</div>
+            <div class="value">4.8d</div>
+          </div>
+        </div>
+        <div class="small-list">
+          <div><span class="meta">Top Countries</span><strong>India, UAE, UK, USA</strong></div>
+          <div><span class="meta">Peak Season</span><strong>Oct–Jan</strong></div>
+          <div><span class="meta">Avg Rating</span><strong>4.6 / 5</strong></div>
+        </div>
+      </div>
+
+      <div class="card col-4">
+        <div class="meta">Hotel Occupancy</div>
+        <div class="chart-box">
+          <div>
+            <div class="value" id="occupancy">78%</div>
+            <div class="sub">Popular: Luxury, Boutique, Homestays</div>
+          </div>
+          <canvas id="occupancyDonut" style="max-width: 220px; max-height: 220px;"></canvas>
+        </div>
+        <div class="small-list">
+          <div><span class="meta">Booking Sources</span><strong>OTAs 52% • Direct 33% • Walk-ins 15%</strong></div>
+        </div>
+      </div>
+
+      <div class="card col-4">
+        <div class="meta">Monthly Revenue</div>
+        <div class="kpi">
+          <div>
+            <div class="value" id="revenue">$4.3M</div>
+            <div class="meta">Streams: Rooms • F&B • Tours • Events</div>
+          </div>
+          <div>
+            <div class="meta">Rev / Visitor</div>
+            <div class="value">$3.58</div>
+          </div>
+        </div>
+        <canvas id="revenueBar" class="chart-wrap"></canvas>
+      </div>
+
+      <div class="card col-8">
+        <div class="row-head">
+          <strong>Visitors Trend</strong>
+          <span class="badge">Organic • Paid • Referral</span>
+        </div>
+        <canvas id="visitorsLine" class="chart-wrap"></canvas>
+      </div>
+
+      <div class="card col-4">
+        <strong>Top Destinations</strong>
+        <div class="small-list">
+          <div><span class="meta">1. Goa</span><span>Beaches & nightlife</span></div>
+          <div><span class="meta">2. Jaipur</span><span>Heritage & culture</span></div>
+          <div><span class="meta">3. Manali</span><span>Mountains & adventure</span></div>
+          <div><span class="meta">4. Kochi</span><span>Backwaters & cuisine</span></div>
+        </div>
+        <hr />
+        <strong>Upcoming Events</strong>
+        <table>
+          <thead><tr><th>Event</th><th>Date</th></tr></thead>
+          <tbody>
+            <tr><td>International Travel Expo</td><td>Dec 5</td></tr>
+            <tr><td>Cultural Food Festival</td><td>Jan 18</td></tr>
+            <tr><td>Beach Music Carnival</td><td>Feb 12</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card col-6">
+        <strong>Customer Experience</strong>
+        <div class="sub">Ratings & sentiment</div>
+        <div class="two-col-gap">
+          <div>
+            <div class="meta">Average Rating</div>
+            <div class="value">4.6 / 5</div>
+            <div class="meta">Top feedback: Cleanliness, Local experiences, Quick service</div>
+          </div>
+          <canvas id="sentimentRadar"></canvas>
+        </div>
+      </div>
+
+      <div class="card col-6">
+        <strong>Most Booked Activities</strong>
+        <table>
+          <thead><tr><th>Activity</th><th>Avg Cost</th><th>Bookings</th></tr></thead>
+          <tbody>
+            <tr><td>Sightseeing tours</td><td>$45</td><td>12,400</td></tr>
+            <tr><td>Water sports</td><td>$70</td><td>5,200</td></tr>
+            <tr><td>Heritage walks</td><td>$20</td><td>6,800</td></tr>
+            <tr><td>Food trails</td><td>$30</td><td>9,100</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+      <footer>
+        <p>“Smart insights for seamless travel experiences — powered by @Stackly Dashboard.”</p>
+      </footer>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./dashboard.js"></script>
+  <script src="./swiper.js"></script>
+</html>

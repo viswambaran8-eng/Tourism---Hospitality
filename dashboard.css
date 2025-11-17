@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  width: 100vw;
+  background-color: beige;
+  overflow-x: hidden;
+}
+
+header {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: beige;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo > img {
+  width: 150px;
+  padding: 0px 5px;
+}
+
+.nav_links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: larger;
+  font-weight: 600;
+  gap: 25px;
+}
+
+.nav_links li {
+  list-style: none;
+  position: relative;
+}
+
+.nav_links li a {
+  text-decoration: none;
+  color: darkred;
+}
+
+i {
+  cursor: pointer;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.icons i {
+  color: darkred;
+  font-size: larger;
+}
+
+.hamburger {
+  display: none;
+}
+
+.lines {
+  width: 25px;
+  background-color: darkred;
+  height: 3px;
+  margin: 5px;
+}
+
+header nav ul li a::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -8px;
+}
+
+header nav ul li a:hover::after {
+  width: 100%;
+  background-color: black;
+}
+
+.page {
+  position: relative;
+}
+
+.drop_menu {
+  display: none;
+}
+
+.drop_menu1 {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -45px;
+  padding: 10px 7px;
+  color: darkred;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 1200px) {
+  .nav_links {
+    font-size: large;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .nav_links {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+/* ---------------------------------------------------------------------------- */
+
+/* Sidebar */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  overflow-x: hidden;
+  transition: 1s;
+  padding-top: 20px;
+  margin-top: 10vh;
+}
+
+.sidebar ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 10px 15px;
+  position: relative;
+}
+
+.sidebar ul li a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: darkred;
+  font-weight: 600;
+  text-decoration: none;
+}
+.sidebar ul li div span {
+  color: black;
+  text-decoration: none;
+}
+
+.flexdiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.sidebar ul li a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar ul li .submenu {
+  list-style: none;
+  padding-left: 15px;
+  /* max-height: 0; */
+  overflow: hidden;
+  display: none;
+}
+.sidebar ul li .submenu2 {
+  padding-left: 15px;
+  display: none;
+}
+.submenu1 {
+  padding-left: 15px;
+  display: block;
+}
+
+/* Close button */
+.sidebar .close-btn {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: 36px;
+  cursor: pointer;
+  color: black;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 16px;
+  overflow-x: hidden;
+  padding: 10px;
+}
+.card {
+  background: #0b1220;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+  overflow-x: hidden;
+}
+
+.col-4 {
+  grid-column: span 4;
+}
+.col-6 {
+  grid-column: span 6;
+}
+.col-8 {
+  grid-column: span 8;
+}
+
+.kpi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.meta {
+  color: white;
+  font-size: 13px;
+}
+.value {
+  color: beige;
+  font-size: 22px;
+  font-weight: 700;
+}
+.small-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 12px;
+}
+.chart-wrap {
+  height: 200px;
+}
+.badge {
+  background: beige;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+}
+.row-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.chart-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+th,
+td {
+  padding: 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  font-size: 13px;
+}
+.two-col-gap {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+strong {
+  padding: 0px 5px;
+  color: beige;
+}
+
+span {
+  color: skyblue;
+  padding: 0px 5px;
+}
+
+@media (max-width: 1100px) {
+  .col-4,
+  .col-6,
+  .col-8 {
+    grid-column: span 12;
+  }
+  .two-col-gap {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 501px) {
+  .card {
+    padding: 8px;
+  }
+}
+.sub {
+  color: beige;
+}
+
+td,
+th {
+  color: beige;
+}
+
+footer p {
+  width: 100%;
+  color: black;
+  font-weight: 600;
+  padding: 10px;
+  font-size: medium;
+  text-align: center;
+}
