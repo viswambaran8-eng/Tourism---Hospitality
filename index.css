@@ -681,5 +681,19 @@ header nav ul li a:hover::after {
 }
 
 .Table7 {
-  padding: 10px 5%;
+  padding: 0px 5%;
+}
+
+.Table7 .swiper .swiper-slide {
+  height: 100%;
+}
+
+.swiper-slide .review img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.review {
+  width: 100%;
+  height: 100%;
 }
