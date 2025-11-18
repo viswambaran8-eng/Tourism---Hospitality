@@ -60,11 +60,13 @@ i {
   justify-content: center;
   align-items: center;
   gap: 10px;
+  z-index: 200;
 }
 
 .icons i {
   color: darkred;
   font-size: larger;
+  padding-right: 20px;
 }
 
 .hamburger {
