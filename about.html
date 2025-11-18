@@ -17,6 +17,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -87,7 +88,7 @@
     </div>
     <section class="Structure">
       <div class="Table2">
-        <div class="Header">
+        <div class="Header" data-aos="fade-up">
           <h3>Our Story</h3>
           <p>
             We are an ISO 9001: 2008 certified company that aim to set clear
@@ -105,7 +106,7 @@
         </div>
       </div>
       <div class="Table3">
-        <div class="Container">
+        <div class="Container" data-aos="fade-right">
           <div class="the-image">
             <img src="Assests/abt1_11zon.webp" alt="" />
           </div>
@@ -121,7 +122,7 @@
             </p>
           </div>
         </div>
-        <div class="Container">
+        <div class="Container" data-aos="fade-left">
           <div class="the-image">
             <img src="Assests/ab2_11zon.webp" alt="" />
           </div>
@@ -138,7 +139,7 @@
           </div>
         </div>
       </div>
-      <div class="Table4">
+      <div class="Table4" data-aos="fade-up">
         <div class="container1">
           <img
             src="Assests/portrait-smiling-caucasian-senior-businessman_11zon_11zon.webp"
@@ -165,12 +166,12 @@
       </div>
 
       <div class="Table5">
-        <div class="Header">
+        <div class="Header" data-aos="fade-up">
           <h3>Team Behind Your Happiness</h3>
         </div>
       </div>
       <div class="Table6">
-        <div class="Cards">
+        <div class="Cards" data-aos="fade-right">
           <img
             style="object-position: down center"
             src="./Assests/grey-haired-male-looking-confident-smiles_11zon_11zon_11zon_11zon_11zon.webp"
@@ -179,7 +180,7 @@
           <h3>Gopal</h3>
           <p>Director-operations</p>
         </div>
-        <div class="Cards">
+        <div class="Cards" data-aos="fade-left">
           <img
             src="./Assests/portrait-smiling-young-businesswoman-showing-thumbs-up_11zon_11zon.webp"
             alt=""
@@ -188,10 +189,10 @@
           <p>Executive Director</p>
         </div>
       </div>
-      <div class="Header">
+      <div class="Header" data-aos="fade-up">
         <h3>Supporting Staffs</h3>
       </div>
-      <div class="Table7">
+      <div class="Table7" data-aos="zoom-in">
         <div class="Cards">
           <img
             src="./Assests/smiling-business-girl-isolated-white_11zon_11zon.webp"
@@ -218,7 +219,7 @@
         </div>
       </div>
     </section>
-        <footer>
+    <footer data-aos="zoom-in">
       <div class="footer-parent">
         <div class="set1">
           <img class="logo" src="./Assests/logo.webp" alt="" />
@@ -321,5 +322,13 @@
     </script>
     <script src="./swiper.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: false,
+        mirror: true,
+      });
+    </script>
   </body>
 </html>

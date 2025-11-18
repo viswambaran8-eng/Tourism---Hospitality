@@ -291,6 +291,7 @@ header nav ul li a:hover::after {
 
 .Structure {
   padding: 20px 5%;
+  overflow-x: hidden;
 }
 
 .Table2 {
@@ -558,8 +559,3 @@ footer {
   } */
 }
 
-@media screen and (max-width: 350px) {
-  .set1 .logo {
-    width: 200px;
-  }
-}

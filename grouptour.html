@@ -17,6 +17,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -86,15 +87,15 @@
         </p>
       </div>
     </div>
-    <section class="Structure">
+    <section class="Structure" data-aos="fade-up">
       <div class="Header">
         <h2>Ultimate Group Tour Adventures</h2>
       </div>
-      <div class="para">
+      <div class="para" data-aos="fade-right">
         <h3>Ongoing Tours</h3>
       </div>
       <div class="Table2">
-        <div class="div">
+        <div class="div" data-aos="flip-right">
           <img src="./Assests/Paris_11zon_11zon.webp" alt="" />
           <div class="img-content">
             <div class="loc">
@@ -108,7 +109,7 @@
             </div>
           </div>
         </div>
-        <div class="div">
+        <div class="div" data-aos="zoom-in">
           <img src="./Assests/Kashmir_11zon_11zon.webp" alt="" />
           <div class="img-content">
             <div class="loc">
@@ -122,7 +123,7 @@
             </div>
           </div>
         </div>
-        <div class="div">
+        <div class="div" data-aos="zoom-in">
           <img src="./Assests/Switzerland_11zon_11zon.webp" alt="" />
           <div class="img-content">
             <div class="loc">
@@ -136,7 +137,7 @@
             </div>
           </div>
         </div>
-        <div class="div">
+        <div class="div" data-aos="flip-left">
           <img src="./Assests/Thailand_11zon_11zon.webp" alt="" />
           <div class="img-content">
             <div class="loc">
@@ -151,11 +152,11 @@
           </div>
         </div>
       </div>
-      <div class="para">
+      <div class="para" data-aos="fade-right">
         <h3>Summer Groups for 2026</h3>
       </div>
       <div class="Table2">
-        <div class="div">
+        <div class="div" data-aos="flip-right">
           <img src="./Assests/Amsterdam_11zon_11zon.webp" alt="" />
           <div class="img-content">
             <div class="loc">
@@ -169,7 +170,7 @@
             </div>
           </div>
         </div>
-        <div class="div">
+        <div class="div" data-aos="zoom-in">
           <img src="./Assests/Australia_11zon_11zon.webp" alt="" />
           <div class="img-content">
             <div class="loc">
@@ -183,7 +184,7 @@
             </div>
           </div>
         </div>
-        <div class="div">
+        <div class="div" data-aos="zoom-in">
           <img src="./Assests/Bali_11zon_11zon.webp" alt="" />
           <div class="img-content">
             <div class="loc">
@@ -197,7 +198,7 @@
             </div>
           </div>
         </div>
-        <div class="div">
+        <div class="div" data-aos="flip-left">
           <img src="./Assests/greatwall of china_11zon_11zon.webp" alt="" />
           <div class="img-content">
             <div class="loc">
@@ -212,11 +213,11 @@
           </div>
         </div>
       </div>
-      <div class="para">
+      <div class="para" data-aos="fade-right">
         <h3>Future Tours</h3>
       </div>
       <div class="Table2">
-        <div class="div">
+        <div class="div" data-aos="flip-right">
           <img src="./Assests/Japan_11zon_11zon.webp" alt="" />
           <div class="img-content">
             <div class="loc">
@@ -230,7 +231,7 @@
             </div>
           </div>
         </div>
-        <div class="div">
+        <div class="div" data-aos="zoom-in">
           <img src="./Assests/Kashmir_11zon_11zon.webp" alt="" />
           <div class="img-content">
             <div class="loc">
@@ -244,7 +245,7 @@
             </div>
           </div>
         </div>
-        <div class="div">
+        <div class="div" data-aos="zoom-in">
           <img src="./Assests/educational-Tours_11zon.webp" alt="" />
           <div class="img-content">
             <div class="loc">
@@ -258,7 +259,7 @@
             </div>
           </div>
         </div>
-        <div class="div">
+        <div class="div" data-aos="flip-left">
           <img src="./Assests/Indian-Tours_11zon_11zon.webp" alt="" />
           <div class="img-content">
             <div class="loc">
@@ -274,7 +275,7 @@
         </div>
       </div>
     </section>
-        <footer>
+    <footer data-aos="fade-up">
       <div class="footer-parent">
         <div class="set1">
           <img class="logo" src="./Assests/logo.webp" alt="" />
@@ -326,4 +327,12 @@
     </footer>
   </body>
   <script src="./swiper.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: false,
+      mirror: true,
+    });
+  </script>
 </html>

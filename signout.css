@@ -407,9 +407,23 @@ footer {
   } */
 }
 
+@media screen and (max-width:690px) {
+.login-main
+  {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width:546px) {
+  .flexcontent {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 @media screen and (max-width: 350px) {
   .set1 .logo {
-    width: 200px;
+    width: 150px;
   }
 }
 

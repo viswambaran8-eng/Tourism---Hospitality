@@ -17,6 +17,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -69,7 +70,7 @@
         <li><a href="./signin.html">Sign In</a></li>
       </ul>
     </div>
-    <div class="login-main">
+    <div class="login-main" data-aos="fade-up">
       <form id="form" method="get" action="./error.html" class="login">
         <div>
           <h1>SIGN UP</h1>
@@ -111,8 +112,8 @@
         </div>
       </form>
     </div>
-        <footer>
-      <div class="footer-parent">
+    <footer>
+      <div class="footer-parent" data-aos="fade-up">
         <div class="set1">
           <img class="logo" src="./Assests/logo.webp" alt="" />
           <p class="footer-para">
@@ -188,7 +189,8 @@
       const ValidPassword = hasLower && hasUpper && hasNumber && hasSpecial;
 
       if (!validEmail) {
-        Email.textContent = "Please Enter Valid Email Id ending with @gmail.com";
+        Email.textContent =
+          "Please Enter Valid Email Id ending with @gmail.com";
         return;
       }
 
@@ -211,6 +213,14 @@
       Form.reset();
 
       window.location.href = "./error.html";
+    });
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: false,
+      mirror: true,
     });
   </script>
 </html>

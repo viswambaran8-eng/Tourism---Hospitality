@@ -17,6 +17,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -69,6 +70,7 @@
         <li><a href="./signin.html">Sign In</a></li>
       </ul>
     </div>
+
     <section class="Structure">
       <div class="animation">
         <p>
@@ -97,11 +99,11 @@
           </p>
         </div>
       </div>
-      <div class="Header">
+      <div class="Header" data-aos="fade-up">
         <h2>Popular Trips</h2>
       </div>
       <div class="Table2">
-        <div class="container1">
+        <div class="container1" data-aos="fade-right">
           <div class="the-image">
             <img src="Assests/Indian-Tours_11zon_11zon.webp" alt="" />
           </div>
@@ -110,7 +112,7 @@
             <button>40 Tours</button>
           </div>
         </div>
-        <div class="container2">
+        <div class="container2" data-aos="fade-left">
           <div class="the-image">
             <img src="Assests/International-tours_11zon.webp" alt="" />
           </div>
@@ -121,7 +123,7 @@
         </div>
       </div>
       <div class="Table3">
-        <div class="container1">
+        <div class="container1" data-aos="fade-right">
           <div class="the-image">
             <img src="Assests/Europe-Tours_11zon.webp" alt="" />
           </div>
@@ -130,7 +132,7 @@
             <button>25 Tours</button>
           </div>
         </div>
-        <div class="container2">
+        <div class="container2" data-aos="zoom-in">
           <div class="the-image">
             <img src="Assests/educational-Tours_11zon.webp" alt="" />
           </div>
@@ -139,7 +141,7 @@
             <button>12 Tours</button>
           </div>
         </div>
-        <div class="container3">
+        <div class="container3" data-aos="fade-left">
           <div class="the-image">
             <img src="Assests/Honeymoon-tours_11zon.webp" alt="" />
           </div>
@@ -149,11 +151,11 @@
           </div>
         </div>
       </div>
-      <div class="Header">
+      <div class="Header" data-aos="fade-up">
         <h2>Travel Better with Us</h2>
       </div>
       <div class="Table4">
-        <div class="container">
+        <div class="container" data-aos="flip-left">
           <div class="the-icon">
             <i class="fa-solid fa-plane-departure"></i>
           </div>
@@ -163,7 +165,7 @@
             than 25,000 international itineraries.
           </p>
         </div>
-        <div class="container">
+        <div class="container" data-aos="zoom-in">
           <div class="the-icon">
             <i class="fa-solid fa-map-location-dot"></i>
           </div>
@@ -173,7 +175,7 @@
             customers.
           </p>
         </div>
-        <div class="container">
+        <div class="container" data-aos="flip-right">
           <div class="the-icon">
             <i class="fa-solid fa-person-walking-luggage"></i>
           </div>
@@ -184,7 +186,7 @@
           </p>
         </div>
       </div>
-      <div class="Table5">
+      <div class="Table5" data-aos="zoom-in">
         <div>
           <h2>Welcome to TourSphere</h2>
         </div>
@@ -207,10 +209,10 @@
       </div>
     </section>
     <section class="Structure">
-      <div class="Header">
+      <div class="Header" data-aos="fade-up">
         <h2>Group Tours</h2>
       </div>
-      <div class="Table6">
+      <div class="Table6" data-aos="zoom-in">
         <!-- Swiper -->
         <div class="swiper">
           <div class="swiper-wrapper">
@@ -339,13 +341,13 @@
           <div class="swiper-button-prev"></div>
         </div>
       </div>
-      <div class="Heading">
+      <div class="Heading" data-aos="fade-up">
         <button class="cta-button">Know More</button>
       </div>
-      <div class="Header">
+      <div class="Header" data-aos="fade-up">
         <h2>Happy Clients</h2>
       </div>
-      <div class="Table7">
+      <div class="Table7" data-aos="zoom-in">
         <div class="swiper">
           <div class="swiper-wrapper">
             <!-- Slide 1 -->
@@ -394,11 +396,11 @@
           <div class="swiper-button-prev"></div>
         </div>
       </div>
-      <div class="Header">
+      <div class="Header" data-aos="fade-up">
         <h2>Latest Blog</h2>
       </div>
 
-      <div class="Table8">
+      <div class="Table8" data-aos="zoom-in">
         <div class="container1">
           <div class="the-image">
             <img src="Assests/Japan_11zon_11zon.webp" alt="" />
@@ -424,11 +426,11 @@
           </div>
         </div>
       </div>
-      <div class="Heading">
+      <div class="Heading" data-aos="fade-up">
         <button class="cta-button">Know More</button>
       </div>
     </section>
-    <footer>
+    <footer  data-aos="fade-up">
       <div class="footer-parent">
         <div class="set1">
           <img class="logo" src="./Assests/logo.webp" alt="" />
@@ -527,6 +529,14 @@
     document.querySelector(".slide-6").addEventListener("click", function (e) {
       e.preventDefault();
       swiper.slideTo(5, 0);
+    });
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: false,
+      mirror: true,
     });
   </script>
 </html>

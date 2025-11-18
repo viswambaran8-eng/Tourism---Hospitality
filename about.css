@@ -279,7 +279,7 @@ header nav ul li a:hover::after {
 
 .Structure {
   padding: 10px 5%;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 .Table2 {
@@ -372,6 +372,7 @@ header nav ul li a:hover::after {
 
 .Table4 {
   display: flex;
+  flex-direction: column;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   border-radius: 12px;
@@ -493,6 +494,7 @@ header nav ul li a:hover::after {
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   border-radius: 12px;
+  overflow: hidden;
 }
 
 
@@ -691,10 +693,4 @@ footer {
     font-size: 14px;
     padding: 10px 15px;
   } */
-}
-
-@media screen and (max-width: 350px) {
-  .set1 .logo {
-    width: 200px;
-  }
 }

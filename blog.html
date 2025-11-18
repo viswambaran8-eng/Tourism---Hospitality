@@ -17,6 +17,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -86,7 +87,7 @@
       </div>
     </div>
     <section class="Structure">
-      <div class="Heads">
+      <div class="Heads" data-aos="fade-up">
         <div class="div">
           <h2>Our Blogs</h2>
         </div>
@@ -101,7 +102,7 @@
         </div>
       </div>
       <div class="Table2">
-        <div id="Amsterdam" class="container1">
+        <div id="Amsterdam" class="container1" data-aos="fade-right" >
           <div class="image">
             <img src="Assests/Amsterdam_11zon_11zon.webp" alt="" />
           </div>
@@ -118,7 +119,7 @@
             </p>
           </div>
         </div>
-        <div id="Australia" class="container1">
+        <div id="Australia" class="container1" data-aos="fade-left">
           <div class="image">
             <img src="Assests/Australia_11zon_11zon.webp" alt="" />
           </div>
@@ -135,7 +136,7 @@
             </p>
           </div>
         </div>
-        <div id="Bali" class="container1">
+        <div id="Bali" class="container1" data-aos="fade-right">
           <div class="image">
             <img src="Assests/Bali_11zon_11zon.webp" alt="" />
           </div>
@@ -151,7 +152,7 @@
             </p>
           </div>
         </div>
-        <div id="Japan" class="container1">
+        <div id="Japan" class="container1" data-aos="fade-left">
           <div class="image">
             <img src="Assests/Japan_11zon_11zon.webp" alt="" />
           </div>
@@ -168,7 +169,7 @@
             </p>
           </div>
         </div>
-        <div id="Thailand" class="container1">
+        <div id="Thailand" class="container1" data-aos="fade-right">
           <div class="image">
             <img src="Assests/Thailand_11zon_11zon.webp" alt="" />
           </div>
@@ -185,7 +186,7 @@
             </p>
           </div>
         </div>
-        <div id="Kashmir" class="container1">
+        <div id="Kashmir" class="container1" data-aos="fade-left">
           <div class="image">
             <img src="Assests/Kashmir_11zon_11zon.webp" alt="" />
           </div>
@@ -202,7 +203,7 @@
             </p>
           </div>
         </div>
-        <div id="Paris" class="container1">
+        <div id="Paris" class="container1" data-aos="fade-right">
           <div class="image">
             <img src="Assests/Paris_11zon_11zon.webp" alt="" />
           </div>
@@ -219,7 +220,7 @@
             </p>
           </div>
         </div>
-        <div id="China" class="container1">
+        <div id="China" class="container1" data-aos="fade-left">
           <div class="image">
             <img src="Assests/greatwall of china_11zon_11zon.webp" alt="" />
           </div>
@@ -238,8 +239,8 @@
         </div>
       </div>
     </section>
-        <footer>
-      <div class="footer-parent">
+    <footer>
+      <div class="footer-parent" data-aos="zoom-in">
         <div class="set1">
           <img class="logo" src="./Assests/logo.webp" alt="" />
           <p class="footer-para">
@@ -291,4 +292,12 @@
   </body>
   <script src="./swiper.js"></script>
   <script src="./search.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: false,
+      mirror: true,
+    });
+  </script>
 </html>

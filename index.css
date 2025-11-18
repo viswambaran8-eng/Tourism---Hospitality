@@ -915,8 +915,3 @@ footer {
   } */
 }
 
-@media screen and (max-width: 350px) {
-  .set1 .logo {
-    width: 200px;
-  }
-}
