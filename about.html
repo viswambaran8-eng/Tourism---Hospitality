@@ -18,6 +18,8 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
   </head>
   <body>
     <header>
@@ -31,7 +33,7 @@
           <li class="page">
             <a href="./index.html">Home</a>
             <i id="page" class="fa-solid fa-caret-down"></i>
-            <a class="drop_menu" href="#">Home 2</a>
+            <a class="drop_menu" href="./index2.html">Home 2</a>
           </li>
           <li><a href="./about.html">About Us</a></li>
           <!-- <li><a href="#">Packages</a></li> -->
@@ -60,7 +62,7 @@
             <span class="dropdownArrow">&#9662;</span>
           </div>
           <ul class="submenu">
-            <li><a href="index.html">Home 2</a></li>
+            <li><a href="index2.html">Home 2</a></li>
           </ul>
         </li>
         <li><a href="./about.html">About Us</a></li>
@@ -221,7 +223,9 @@
         </div>
       </div>
     </section>
-    <footer data-aos="zoom-in">
+    <footer data-aos="fade-up">
+      <div id="vanta-fr"></div>
+
       <div class="footer-parent">
         <div class="set1">
           <img class="logo" src="./Assests/logo.webp" alt="" />
@@ -323,6 +327,7 @@
         });
     </script>
     <script src="./swiper.js"></script>
+    <script src="./footer.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

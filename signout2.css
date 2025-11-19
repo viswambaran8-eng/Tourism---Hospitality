@@ -215,48 +215,60 @@ header nav ul li a:hover::after {
 
 /* ---------------------------------------------------------------------------- */
 
+.Table {
+  background-image: url(Assests/sunglasses-map-near-camera-compass_11zon_11zon.webp);
+  z-index: 10;
+  background-position: bottom right;
+  min-height: 100vh;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .login-main {
-    text-align: center;
-    
+  text-align: center;
 }
 
 .login h1,
 h2 {
-    text-align: center;
-    padding: 10px;
-    color: darkred;font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  padding: 10px;
+  color: darkred;
+  font-family: "Times New Roman", Times, serif;
 }
 .login {
-    max-width: 600px;
-    margin: 50px auto;
-    background: beige;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  margin: 50px auto;
+  background: beige;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .login input,
 .login textarea {
-    width: 100%;
-    padding: 20px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 6px;
-    background:white;
+  width: 100%;
+  padding: 20px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 6px;
+  background: white;
 }
 
 .login button {
-    width: 120px;
-    background: white;
-    border: none;
-    padding: 12px 25px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: 0.3s;
-    text-align: center;
-    margin-bottom: 5px;
+  width: 120px;
+  background: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+  text-align: center;
+  margin-bottom: 5px;
 }
 
 .f-password {
@@ -274,7 +286,6 @@ h2 {
   text-decoration: none;
   color: darkred;
 }
-
 
 /* ------------------ FOOTER PAGE ------------------------ */
 
@@ -407,14 +418,13 @@ footer {
   } */
 }
 
-@media screen and (max-width:690px) {
-.login-main
-  {
+@media screen and (max-width: 690px) {
+  .login-main {
     padding: 20px;
   }
 }
 
-@media screen and (max-width:546px) {
+@media screen and (max-width: 546px) {
   .flexcontent {
     display: flex;
     flex-direction: column;
@@ -426,4 +436,3 @@ footer {
     width: 150px;
   }
 }
-

@@ -12,6 +12,9 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./index.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
     <!-- Swiper CSS -->
     <link
       rel="stylesheet"
@@ -402,6 +405,7 @@
           <div class="swiper-button-prev"></div>
         </div>
       </div>
+    </section>
       <div class="Header" data-aos="fade-up">
         <h2>Latest Blog</h2>
       </div>
@@ -438,6 +442,8 @@
       </div>
     </section>
     <footer data-aos="fade-up">
+    <div id="vanta-fr"></div>
+
       <div class="footer-parent">
         <div class="set1">
           <img class="logo" src="./Assests/logo.webp" alt="" />
@@ -487,9 +493,11 @@
         </div>
       </div>
     </footer>
-
     <script src="./swiper.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="./footer.js"></script>
+    
   </body>
   <script>
     const swiper = new Swiper(".swiper", {
@@ -546,4 +554,7 @@
       mirror: true,
     });
   </script>
+
+
+
 </html>

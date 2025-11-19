@@ -18,11 +18,13 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
   </head>
   <body>
     <header>
       <div class="logo">
-         <a href="./index.html">
+        <a href="./index.html">
           <img src="./Assests/logo.webp" alt="" />
         </a>
       </div>
@@ -31,7 +33,7 @@
           <li class="page">
             <a href="./index.html">Home</a>
             <i id="page" class="fa-solid fa-caret-down"></i>
-            <a class="drop_menu" href="#">Home 2</a>
+            <a class="drop_menu" href="./index2.html">Home 2</a>
           </li>
           <li><a href="./about.html">About Us</a></li>
           <!-- <li><a href="#">Packages</a></li> -->
@@ -60,7 +62,7 @@
             <span class="dropdownArrow">&#9662;</span>
           </div>
           <ul class="submenu">
-            <li><a href="index.html">Home 2</a></li>
+            <li><a href="index2.html">Home 2</a></li>
           </ul>
         </li>
         <li><a href="./about.html">About Us</a></li>
@@ -72,50 +74,54 @@
         <li><a href="./signin.html">Sign In</a></li>
       </ul>
     </div>
-    <div class="login-main" data-aos="fade-up">
-      <form id="form" method="get" action="./error.html" class="login">
-        <div>
-          <h1>SIGN UP</h1>
-          <h2>Create Account to manage your events</h2>
-        </div>
-        <input type="name" placeholder="Eg Jerry" required />
-        <input
-          id="inputEmail"
-          type="email"
-          placeholder="you@gmail.com"
-          required
-        />
-        <span id="span_email" class="span_email"></span>
-        <input
-          id="inputPassword"
-          type="password"
-          placeholder="Enter your Password"
-          required
-        />
-        <span id="span_password" class="span_password"></span>
-        <!-- <textarea rows="5" placeholder="Your Message"></textarea>   -->
-        <button class="cta-button" type="submit">Sign Up</button>
-        <button class="cta-button" type="reset">
-          <a href="./error.html">Reset</a>
-        </button>
-        <div class="flex" style="margin-top: 20px; padding: 10px">
-          <p>Already have an account? login in here</p>
-          <a
-            href="./signin.html"
-            style="
-              margin-left: 15px;
-              color: rgb(6, 107, 6);
-              text-decoration: none;
-              padding: 2px;
-            "
-          >
-            Login Now
-          </a>
-        </div>
-      </form>
-    </div>
-    <footer>
-      <div class="footer-parent" data-aos="fade-up">
+    <section class="Table">
+      <div class="login-main" data-aos="fade-up">
+        <form id="form" method="get" action="./error.html" class="login">
+          <div>
+            <h1>SIGN UP</h1>
+            <h2>Create Account to manage your events</h2>
+          </div>
+          <input type="name" placeholder="Eg Jerry" required />
+          <input
+            id="inputEmail"
+            type="email"
+            placeholder="you@gmail.com"
+            required
+          />
+          <span id="span_email" class="span_email"></span>
+          <input
+            id="inputPassword"
+            type="password"
+            placeholder="Enter your Password"
+            required
+          />
+          <span id="span_password" class="span_password"></span>
+          <!-- <textarea rows="5" placeholder="Your Message"></textarea>   -->
+          <button class="cta-button" type="submit">Sign Up</button>
+          <button class="cta-button" type="reset">
+            <a href="./error.html">Reset</a>
+          </button>
+          <div class="flex" style="margin-top: 20px; padding: 10px">
+            <p>Already have an account? login in here</p>
+            <a
+              href="./signin.html"
+              style="
+                margin-left: 15px;
+                color: rgb(6, 107, 6);
+                text-decoration: none;
+                padding: 2px;
+              "
+            >
+              Login Now
+            </a>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer data-aos="fade-up">
+      <div id="vanta-fr"></div>
+
+      <div class="footer-parent">
         <div class="set1">
           <img class="logo" src="./Assests/logo.webp" alt="" />
           <p class="footer-para">
@@ -166,6 +172,7 @@
     </footer>
   </body>
   <script src="./swiper.js"></script>
+  <script src="./footer.js"></script>
   <script>
     //   Forms Page
 

@@ -231,9 +231,9 @@ header nav ul li a:hover::after {
   position: absolute;
   top: 30%;
   padding: 40px;
-  color: white;
+  color: darkred;
   max-width: 70%;
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(4px);
 }
 
 .image-content h2 {
@@ -385,9 +385,7 @@ header nav ul li a:hover::after {
 .container1 img {
   width: 100%;
   object-fit: cover;
-  border-radius: 50%;
   background-color: beige;
-  height: 100vh;
   object-position: center;
 }
 

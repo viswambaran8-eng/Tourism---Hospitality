@@ -211,6 +211,8 @@ header nav ul li a:hover::after {
   color: black;
 }
 
+/* ---------------------------------------------------------- */
+
 .grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);

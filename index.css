@@ -676,6 +676,7 @@ header nav ul li a:hover::after {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .cta-button {
@@ -794,11 +795,16 @@ footer {
 .footer-parent {
   display: flex;
   flex-wrap: wrap;
-  background-color: beige;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-  margin-top: 30px;
   overflow-x: hidden;
+  position: relative;
+}
+
+#vanta-fr{
+/* height: 100vh; */
+position: absolute;
+inset: 0;
 }
 
 .set1,

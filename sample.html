@@ -1,0 +1,159 @@
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tourism And Hospitality</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./sample.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+
+    />
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="./index.html">
+          <img src="./Assests/logo.webp" alt="" />
+        </a>
+      </div>
+      <nav>
+        <ul class="nav_links">
+          <li class="page">
+            <a href="./index.html">Home</a>
+            <i id="page" class="fa-solid fa-caret-down"></i>
+            <a class="drop_menu" href="./index2.html">Home 2</a>
+          </li>
+          <li><a href="./about.html">About Us</a></li>
+          <!-- <li><a href="#">Packages</a></li> -->
+          <li><a href="./grouptour.html">Group Tours</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+          <li><a href="./dashboard.html">Dashboard</a></li>
+        </ul>
+      </nav>
+      <div class="icons">
+        <a href="./signin.html"><i class="fa-regular fa-circle-user"></i></a>
+        <div class="hamburger">
+          <div class="lines"></div>
+          <div class="lines"></div>
+          <div class="lines"></div>
+        </div>
+      </div>
+    </header>
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+      <div class="close-btn">&times;</div>
+      <ul>
+        <li>
+          <div class="flexdiv">
+            <a href="./index.html">Home </a>
+            <span class="dropdownArrow">&#9662;</span>
+          </div>
+          <ul class="submenu">
+            <li><a href="index2.html">Home 2</a></li>
+          </ul>
+        </li>
+        <li><a href="./about.html">About Us</a></li>
+        <!-- <li><a href="./packages.html">Packages</a></li> -->
+        <li><a href="./grouptour.html">Group Tour</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="./contact.html">Contact Us</a></li>
+        <li><a href="./dashboard.html">Dashboard</a></li>
+        <li><a href="./signin.html">Sign In</a></li>
+      </ul>
+    </div>
+      <div class="controls">
+        <span class="pill" >Period: <strong style="color: darkred">Last 30 days</strong></span>
+      </div>
+    </header>
+  <section class="dashboard-grid">
+
+    <!-- KPI CARDS -->
+    <div class="card kpi-card">
+      <h3>Total Monthly Visitors</h3>
+      <p class="kpi-value" id="kpiVisitors">1.24M</p>
+      <span>Avg Stay: 4.8 days</span>
+    </div>
+
+    <div class="card kpi-card">
+      <h3>Avg Hotel Occupancy</h3>
+      <p class="kpi-value" id="kpiOccupancy">78%</p>
+      <span>Popular: Luxury, Boutique, Homestays</span>
+    </div>
+
+    <div class="card kpi-card">
+      <h3>Monthly Revenue</h3>
+      <p class="kpi-value" id="kpiRevenue">$4.3M</p>
+      <span>Rooms • F&B • Tours • Events</span>
+    </div>
+
+    <!-- Visitors Trend -->
+    <div class="card big-card">
+      <h3>Visitors Trend (12 Months)</h3>
+      <canvas id="visitorsTrend"></canvas>
+    </div>
+
+    <!-- Hotel Occupancy Donut -->
+    <div class="card mid-card">
+      <h3>Hotel Occupancy Spread</h3>
+      <canvas id="occupancyDonut"></canvas>
+    </div>
+
+    <!-- Revenue Bar -->
+    <div class="card mid-card">
+      <h3>Revenue Breakdown</h3>
+      <canvas id="revenueBar"></canvas>
+    </div>
+
+    <!-- Radar Chart -->
+    <div class="card mid-card">
+      <h3>Customer Sentiment Radar</h3>
+      <canvas id="sentimentRadar"></canvas>
+    </div>
+
+    <!-- Activities Table -->
+    <div class="card table-card">
+      <h3>Most Booked Activities</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Activity</th>
+            <th>Avg Cost</th>
+            <th>Bookings</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Sightseeing Tours</td><td>$45</td><td>12,400</td></tr>
+          <tr><td>Water Sports</td><td>$70</td><td>5,200</td></tr>
+          <tr><td>Heritage Walks</td><td>$20</td><td>6,800</td></tr>
+          <tr><td>Food Trails</td><td>$30</td><td>9,100</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Top Destinations -->
+    <div class="card table-card">
+      <h3>Top Trending Destinations</h3>
+      <ul class="list">
+        <li><strong>1.Goa</strong> — Beaches & Nightlife</li>
+        <li><strong>2.Jaipur</strong> — Heritage & Royal Culture</li>
+        <li><strong>3.Manali</strong> — Mountains & Adventure</li>
+        <li><strong>4.Kochi</strong> — Backwaters & Cuisine</li>
+      </ul>
+    </div>
+
+  </section>
+  <script src="https://cdn.jsdelivr.net/pm/chart.js"></script>
+  <script src="./sample.js"></script>
+  <script src="./swiper.js"></script>
+</body>
+</html>

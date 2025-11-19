@@ -54,8 +54,8 @@ new Chart(document.getElementById("sentimentRadar"), {
   data: {
     labels: ["Cleanliness", "Food", "Service", "Location", "Value"],
     datasets: [{
-      label: "Rating / 5",
-      data: [4.7, 4.3, 4.6, 4.4, 4.2],
+      label: "Rating / 10",
+      data: [8.85, 8.85, 9.85, 7.85, 8.95],
       borderColor: "#0288d1",
       backgroundColor: "rgba(2,136,209,0.3)"
     }]
