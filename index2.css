@@ -416,13 +416,6 @@ header nav ul li a:hover::after {
   justify-content: center;
 }
 
-.the-content button {
-  padding: 15px;
-  background-color: darkred;
-  color: white;
-  border-radius: 12px;
-}
-
 .the-content h2 {
   color: darkred;
 }
@@ -446,9 +439,6 @@ header nav ul li a:hover::after {
   }
   .the-content h2 {
     font-size: larger;
-  }
-  .the-content button {
-    padding: 12px;
   }
 }
 
@@ -696,9 +686,15 @@ header nav ul li a:hover::after {
   text-transform: capitalize;
 }
 
+.cta-button:hover {
+  color: white;
+  background-color: red;
+  box-shadow: 0 0 15px 2px orange;
+}
+
 .Table7 {
   padding: 0px 5%;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .Table7 .swiper .swiper-slide {
@@ -803,10 +799,17 @@ footer {
 .footer-parent {
   display: flex;
   flex-wrap: wrap;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   overflow-x: hidden;
   position: relative;
+}
+
+.footer-map {
+  padding: 20px 25px 10px 25px;
+}
+
+.footer-map iframe {
+  position: relative;
+  border-radius: 10px;
 }
 
 #vanta-fr{

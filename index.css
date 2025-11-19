@@ -217,13 +217,12 @@ header nav ul li a:hover::after {
 
 .Structure {
   padding: 20px 0px;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 .Structure1 {
   padding: 20px 0px;
   overflow-x: hidden;
 }
-
 
 .animation {
   width: 100%;
@@ -408,13 +407,6 @@ header nav ul li a:hover::after {
   justify-content: center;
 }
 
-.the-content button {
-  padding: 15px;
-  background-color: darkred;
-  color: white;
-  border-radius: 12px;
-}
-
 .the-content h2 {
   color: darkred;
 }
@@ -438,9 +430,6 @@ header nav ul li a:hover::after {
   }
   .the-content h2 {
     font-size: larger;
-  }
-  .the-content button {
-    padding: 12px;
   }
 }
 
@@ -680,7 +669,7 @@ header nav ul li a:hover::after {
 }
 
 .cta-button {
-  padding: 15px 10px;
+  padding: 15px;
   border-radius: 12px;
   color: white;
   background-color: darkred;
@@ -688,9 +677,15 @@ header nav ul li a:hover::after {
   text-transform: capitalize;
 }
 
+.cta-button:hover {
+  color: white;
+  background-color: red;
+  box-shadow: 0 0 15px 2px orange;
+}
+
 .Table7 {
   padding: 0px 5%;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .Table7 .swiper .swiper-slide {
@@ -712,7 +707,7 @@ header nav ul li a:hover::after {
   width: 100%;
   display: flex;
   gap: 15px;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .Table8 .container1 {
@@ -795,16 +790,23 @@ footer {
 .footer-parent {
   display: flex;
   flex-wrap: wrap;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   overflow-x: hidden;
   position: relative;
 }
 
-#vanta-fr{
-min-height: 100vh;
-position: absolute;
-inset: 0;
+.footer-map {
+  padding: 20px 25px 10px 25px;
+}
+
+.footer-map iframe {
+  position: relative;
+  border-radius: 10px;
+}
+
+#vanta-fr {
+  min-height: 100vh;
+  position: absolute;
+  inset: 0;
 }
 
 .set1,
@@ -911,14 +913,9 @@ inset: 0;
     font-size: larger;
   }
 
-  /* .cta-button {
-    font-size: 14px;
+  .cta-button {
+    font-size: 12px;
     padding: 10px 12px;
   }
-
-  .cta-button1 {
-    font-size: 14px;
-    padding: 10px 15px;
-  } */
 }
 

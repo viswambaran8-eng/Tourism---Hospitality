@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./index.css" />
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
     <!-- Swiper CSS -->
     <link
       rel="stylesheet"
@@ -115,7 +115,7 @@
           <div class="the-content">
             <h2>Indian Tours</h2>
             <a href="./error.html">
-              <button>40 Tours</button>
+              <button class="cta-button">40 Tours</button>
             </a>
           </div>
         </div>
@@ -126,7 +126,7 @@
           <div class="the-content">
             <h2>International Tours</h2>
             <a href="./error.html">
-              <button>120 Tours</button>
+              <button class="cta-button">120 Tours</button>
             </a>
           </div>
         </div>
@@ -139,7 +139,7 @@
           <div class="the-content">
             <h2>Europe Tours</h2>
             <a href="./error.html">
-              <button>25 Tours</button>
+              <button class="cta-button">25 Tours</button>
             </a>
           </div>
         </div>
@@ -150,7 +150,7 @@
           <div class="the-content">
             <h2>Educational Tours</h2>
             <a href="./error.html">
-              <button>12 Tours</button>
+              <button class="cta-button">12 Tours</button>
             </a>
           </div>
         </div>
@@ -161,7 +161,7 @@
           <div class="the-content">
             <h2>Honeymoon Tours</h2>
             <a href="./error.html">
-              <button>8 Tours</button>
+              <button class="cta-button">8 Tours</button>
             </a>
           </div>
         </div>
@@ -404,8 +404,14 @@
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
         </div>
+        <div class="Heading" data-aos="fade-up">
+          <a href="./error.html">
+            <button class="cta-button">Know More</button>
+          </a>
+        </div>
       </div>
     </section>
+    <section class="Structure">
       <div class="Header" data-aos="fade-up">
         <h2>Latest Blog</h2>
       </div>
@@ -442,8 +448,7 @@
       </div>
     </section>
     <footer data-aos="fade-up">
-    <div id="vanta-fr"></div>
-
+      <div id="vanta-fr"></div>
       <div class="footer-parent">
         <div class="set1">
           <img class="logo" src="./Assests/logo.webp" alt="" />
@@ -492,12 +497,21 @@
           </p>
         </div>
       </div>
+      <div class="footer-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15628.64628603643!2d78.15647006034851!3d11.682959309484378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babefef7fd970bb%3A0xe11aef1a71994f9!2sStackly!5e0!3m2!1sen!2sin!4v1763574992132!5m2!1sen!2sin"
+            width="100%"
+            height="250"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
     </footer>
     <script src="./swiper.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
     <script src="./footer.js"></script>
-    
   </body>
   <script>
     const swiper = new Swiper(".swiper", {
@@ -554,7 +568,4 @@
       mirror: true,
     });
   </script>
-
-
-
 </html>
