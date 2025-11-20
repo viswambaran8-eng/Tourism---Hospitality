@@ -25,9 +25,10 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
+  padding-bottom: 20px;
 }
 
-.logo  img {
+.logo img {
   width: 150px;
   padding: 0px 5px;
 }
@@ -106,7 +107,8 @@ header nav ul li a:hover::after {
   display: block;
   position: absolute;
   left: 0;
-  bottom: -45px;
+  bottom: -50px;
+  background-color: white;
   padding: 10px 6px;
   color: darkred;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
@@ -407,44 +409,43 @@ header nav ul li a:hover::after {
   padding: 10px;
 }
 
-@media screen and (max-width:1220px) {
+@media screen and (max-width: 1220px) {
   .Table4 {
     display: flex;
     flex-direction: column;
   }
   .container2 h3 {
-  text-align: center;
-  font-size: x-large;
-  padding: 10px;
+    text-align: center;
+    font-size: x-large;
+    padding: 10px;
+  }
+
+  .container2 p {
+    text-align: justify;
+    font-size: larger;
+    text-wrap: wrap;
+    line-height: 1.8;
+    padding: 10px;
+  }
+  .container1 img {
+    border-radius: 0%;
+    padding: 10px;
+  }
 }
 
-.container2 p {
-  text-align: justify;
-  font-size: larger;
-  text-wrap: wrap;
-  line-height: 1.8;
-  padding: 10px;
-}
-.container1 img {
-  border-radius: 0%;
-  padding: 10px;
-}
-}
-
-@media screen and (max-width:620px) {
+@media screen and (max-width: 620px) {
   .container1 img {
     height: 40vh;
-}
+  }
 
-.container2 h3 {
-  font-size: larger;
-}
+  .container2 h3 {
+    font-size: larger;
+  }
 
-.container2 p {
-  font-size: small;
-  padding: 10px;
-}
-
+  .container2 p {
+    font-size: small;
+    padding: 10px;
+  }
 }
 
 /* ----------------------------------------------------- */
@@ -495,8 +496,7 @@ header nav ul li a:hover::after {
   overflow: hidden;
 }
 
-
-@media screen and (max-width:950px) {
+@media screen and (max-width: 950px) {
   .Table7 {
     display: flex;
     flex-direction: column;
@@ -521,7 +521,7 @@ header nav ul li a:hover::after {
   }
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
   .Table6 .Cards img {
     height: 30vh;
   }
@@ -561,7 +561,6 @@ header nav ul li a:hover::after {
   font-weight: 400;
 }
 
-
 /* ------------------ FOOTER PAGE ------------------------ */
 
 footer {
@@ -576,7 +575,7 @@ footer {
 }
 
 .footer-map {
-  padding: 20px 25px 10px 25px;
+  padding: 20px 40px 10px 40px;
 }
 
 .footer-map iframe {
@@ -584,10 +583,10 @@ footer {
   border-radius: 10px;
 }
 
-#vanta-fr{
-min-height: 100vh;
-position: absolute;
-inset: 0;
+#vanta-fr {
+  min-height: 100vh;
+  position: absolute;
+  inset: 0;
 }
 
 .set1,

@@ -25,6 +25,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
+  padding-bottom: 20px;
 }
 
 .logo img {
@@ -106,7 +107,8 @@ header nav ul li a:hover::after {
   display: block;
   position: absolute;
   left: 0;
-  bottom: -45px;
+  bottom: -50px;
+  background-color: white;
   padding: 10px 6px;
   color: darkred;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
@@ -418,7 +420,6 @@ header nav ul li a:hover::after {
   color: darkred;
 }
 
-
 /* ------------------ FOOTER PAGE ------------------------ */
 
 footer {
@@ -433,7 +434,7 @@ footer {
 }
 
 .footer-map {
-  padding: 20px 25px 10px 25px;
+  padding: 20px 40px 10px 40px;
 }
 
 .footer-map iframe {
@@ -441,10 +442,10 @@ footer {
   border-radius: 10px;
 }
 
-#vanta-fr{
-min-height: 100vh;
-position: absolute;
-inset: 0;
+#vanta-fr {
+  min-height: 100vh;
+  position: absolute;
+  inset: 0;
 }
 .set1,
 .set2,
