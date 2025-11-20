@@ -32,7 +32,7 @@
       subMenu.classList.toggle("submenu1");
     });
 
-    dropdown1.addEventListener("click", () => {
-      subMenu2.classList.toggle("submenu2");
-      subMenu2.classList.toggle("submenu1");
-    });
+    // dropdown1.addEventListener("click", () => {
+    //   subMenu2.classList.toggle("submenu2");
+    //   subMenu2.classList.toggle("submenu1");
+    // });
