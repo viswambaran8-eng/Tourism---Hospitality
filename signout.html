@@ -78,7 +78,7 @@
       <div class="login-main" data-aos="fade-up">
         <form id="form" method="get" action="./error.html" class="login">
           <div>
-            <h1>SIGN IN</h1>
+            <h1>SIGN UP</h1>
             <h2>Create Account to manage your events</h2>
           </div>
           <input type="name" placeholder="Eg Jerry" required />
@@ -96,6 +96,14 @@
             required
           />
           <span id="span_password" class="span_password"></span>
+
+          <input
+            id="inputConfirm"
+            type="password"
+            placeholder="Confirm your Password"
+            required
+          />
+          <span id="span_confirm" class="span_confirm"></span>
           <!-- <textarea rows="5" placeholder="Your Message"></textarea>   -->
           <button class="cta-button" type="submit">Sign Up</button>
           <button class="cta-button" type="reset">
@@ -189,47 +197,60 @@
 
     const Email = document.getElementById("span_email");
     const Password1 = document.getElementById("span_password");
-    //   const spError = document.getElementById("span_error");
+    const ConfirmPass = document.getElementById("span_confirm");
+
     const Form = document.getElementById("form");
     const InputEmail = document.getElementById("inputEmail");
     const InputPassword = document.getElementById("inputPassword");
+    const InputConfirm = document.getElementById("inputConfirm");
 
     Form.addEventListener("submit", function (event) {
       event.preventDefault();
 
       const emailvalue = InputEmail.value.trim();
-      const password2 = InputPassword.value;
+      const password2 = InputPassword.value.trim();
+      const confirmValue = InputConfirm.value.trim();
 
+      // Email check
       const validEmail = emailvalue.endsWith("@gmail.com");
 
+      // Password checks
       const hasUpper = /[A-Z]/.test(password2);
       const hasLower = /[a-z]/.test(password2);
       const hasNumber = /[0-9]/.test(password2);
       const hasSpecial = /[!@#$%^&*(,.?:{}|<>]/.test(password2);
       const ValidPassword = hasLower && hasUpper && hasNumber && hasSpecial;
 
+      // Email validation
       if (!validEmail) {
-        Email.textContent =
-          "Please Enter Valid Email Id ending with @gmail.com";
+        Email.textContent = "Please Enter a Valid Email ending with @gmail.com";
         return;
-      }
-
-      if (validEmail) {
+      } else {
         Email.textContent = "";
       }
 
+      // Password validation
       if (!ValidPassword) {
         Password1.textContent =
-          "Enter with Special character , number , uppercase and lowercase (eg:H,@,9,h)";
+          "Password must include uppercase, lowercase, number & special character";
         return;
-      }
-
-      if (ValidPassword) {
+      } else {
         Password1.textContent = "";
       }
 
+      // Confirm Password validation
+      if (password2 !== confirmValue) {
+        ConfirmPass.textContent = "Passwords do not match";
+        return;
+      } else {
+        ConfirmPass.textContent = "";
+      }
+
+      // Clear all messages
       Email.textContent = "";
       Password1.textContent = "";
+      ConfirmPass.textContent = "";
+
       Form.reset();
 
       window.location.href = "./error.html";
