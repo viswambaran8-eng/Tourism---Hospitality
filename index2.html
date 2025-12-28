@@ -22,6 +22,20 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
+
+<div class="body1">
+  <div class="loader">
+    <div class="ring"></div>
+    <div class="ring ring2"></div>
+    <div class="ring ring3"></div>
+    <div class="ring ring4"></div>
+    <span>LOADING</span>
+  </div>
+</div>
+
+<div class="the-main">
+
+
     <header>
       <div class="logo">
         <a href="./index2.html">
@@ -572,6 +586,7 @@
       </div>
     </footer>
 
+    </div>
     <script src="./swiper.js"></script>
     <script src="./footer.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -625,10 +640,13 @@
   </script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init({
-      duration: 1000,
-      once: false,
-      mirror: true,
-    });
+AOS.init({
+  once: true,
+  duration: 1000,
+  easing: 'ease-out-cubic',
+  startEvent: 'aos:ready'
+});
   </script>
+
+  <script src="./loader.js"></script>
 </html>

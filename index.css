@@ -987,3 +987,86 @@ footer {
     padding: 10px 12px;
   }
 }
+
+
+
+
+  /* Main content hidden initially */
+  .the-main {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.6s ease;
+  }
+
+.body1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: #0a0a0a;
+  font-family: "Roboto Slab", serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  opacity: 1;
+  transition: opacity 0.6s ease;
+}
+
+.loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.loader span {
+  margin-top: 50px; 
+  font-size: 32px; 
+  font-weight: 700;
+  color: #ff4c4c; /* Dark red main text */
+  text-shadow: 0 0 15px #ff4c4c, 0 0 30px #8b0000;
+  letter-spacing: 2.5px;
+}
+
+/* Rotating Rings - multi-color with dark red major */
+.ring {
+  position: absolute;
+  border: 4px solid transparent;
+  border-top-color: #ff4c4c; /* Dark red main ring */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 1.2s linear infinite;
+  box-shadow: 0 0 20px #ff4c4c, 0 0 35px #8b0000;
+}
+
+.ring2 {
+  width: 90px;
+  height: 90px;
+  border-top-color: #ff6f61; /* Neon orange accent */
+  animation-duration: 1s;
+  box-shadow: 0 0 15px #ff6f61, 0 0 25px #8b0000;
+}
+
+.ring3 {
+  width: 60px;
+  height: 60px;
+  border-top-color: #ff3399; /* Neon pink accent */
+  animation-duration: 0.8s;
+  box-shadow: 0 0 10px #ff3399, 0 0 20px #8b0000;
+}
+
+.ring4 {
+  width: 40px;
+  height: 40px;
+  border-top-color: #aa00ff; /* Purple accent */
+  animation-duration: 0.6s;
+  box-shadow: 0 0 8px #aa00ff, 0 0 15px #8b0000;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
